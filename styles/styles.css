@@ -7,7 +7,6 @@ body {
   color: #606c71;
   background-color: #F6F6FF;
   font-family: "Lucida Console";
-  font-size: 1em;
   line-height: 3ex;
 }
 header,
@@ -34,24 +33,89 @@ footer {
     padding: 2rem 1rem;
   }
 }
-.project-name {
+header .project-name,
+footer .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
 }
 @media screen and (min-width: 64em) {
-  .project-name {
+  header .project-name,
+  footer .project-name {
     font-size: 3.25rem;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .project-name {
+  header .project-name,
+  footer .project-name {
     font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 42em) {
-  .project-name {
+  header .project-name,
+  footer .project-name {
     font-size: 1.75rem;
   }
+}
+header .btn,
+footer .btn {
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  border-radius: 0.5rem 0.5rem;
+}
+header .btn + header .btn,
+header .btn + footer .btn,
+footer .btn + header .btn,
+footer .btn + footer .btn {
+  margin-left: 1rem;
+}
+header .btn:hover,
+footer .btn:hover {
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #101010;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 64em) {
+  header .btn,
+  footer .btn {
+    padding: 0.75rem 1rem;
+  }
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  header .btn,
+  footer .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 42em) {
+  header .btn,
+  footer .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  header .btn + header .btn,
+  header .btn + footer .btn,
+  footer .btn + header .btn,
+  footer .btn + footer .btn {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+.main-content div :last-child {
+  margin-bottom: 3rem;
 }
 .main-content h1,
 .main-content h2,
@@ -111,7 +175,7 @@ footer {
   height: 2px;
   padding: 0;
   margin: 1rem 0;
-  background-color: #eff0f1;
+  background-color: #000010;
   border: 0;
 }
 .main-content ul,
@@ -167,56 +231,10 @@ footer {
     font-size: 1rem;
   }
 }
-.btn {
-  font-size: 1rem;
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  -moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-.btn + .btn {
-  margin-left: 1rem;
-}
-.btn:hover {
-  color: #FFFFFF;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: #101010;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-@media screen and (min-width: 64em) {
-  .btn {
-    padding: 0.75rem 1rem;
-  }
-}
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 42em) {
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-  }
-  .btn + .btn {
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-}
-img.store-badge {
+.store-badge {
   height: 2rem;
 }
-span.tick {
+.tick {
   margin-left: -3rem;
   text-decoration: underline;
 }
