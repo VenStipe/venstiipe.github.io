@@ -7,23 +7,27 @@
   font-size: 16px;
   line-height: 3ex;
 }
-.page-header {
+header,
+footer {
   color: #FFFFFF;
   text-align: center;
   background-color: #000010;
 }
 @media screen and (min-width: 64em) {
-  .page-header {
+  header,
+  footer {
     padding: 5rem 6rem;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
+  header,
+  footer {
     padding: 3rem 4rem;
   }
 }
 @media screen and (max-width: 42em) {
-  .page-header {
+  header,
+  footer {
     padding: 2rem 1rem;
   }
 }
@@ -166,7 +170,41 @@
 .main-content pre {
   content: normal;
 }
+.tabledList {
+  width: 450px;
+  /* change it to whatever you like */
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.tabledList:before,
+.tabledList:after {
+  text-align: center;
+  display: block;
+  border-bottom: 0;
+  width: 48%;
+}
+.tabledList:before {
+  border-right: 0;
+}
+.tabledList:after {
+  position: absolute;
+  top: 0;
+  left: 48%;
+  margin-left: 1px;
+}
+.tabledList li {
+  text-align: right;
+  width: 48%;
+  float: left;
+  margin-bottom: -1px;
+}
+.tabledList li:nth-child(even) {
+  margin-left: -1px;
+}
 .btn {
+  font-size: 1rem;
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
@@ -215,4 +253,17 @@ img.store-badge {
 span.tick {
   margin-left: -3rem;
   text-decoration: underline;
+}
+.next {
+  margin-left: -3rem;
+  color: #000010;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.next:before {
+  content: "»»» NEXT: ";
+}
+.next:after {
+  content: " «««";
 }

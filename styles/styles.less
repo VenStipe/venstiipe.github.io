@@ -14,7 +14,7 @@ body {
     line-height: 3ex;
 }
 
-.page-header {
+header, footer {
     color: @headerFooterForeground;
     text-align: center;
     background-color: @headerFooterBackground;
@@ -174,7 +174,46 @@ body {
     content: normal;
 }
 
+.tabledList {
+    width: 450px; /* change it to whatever you like */
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &:before, &:after {
+        text-align: center;
+        display: block;
+        border-bottom: 0;
+        width: 48%;
+    }
+
+    &:before {
+        border-right: 0;
+    }
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 48%;
+        margin-left: 1px;
+    }
+
+    & li {
+        text-align: right;
+        width: 48%;
+        float: left;
+        margin-bottom: -1px;
+    }
+
+    & li:nth-child(even) {
+        margin-left: -1px;
+    }
+}
+
+
 .btn {
+    font-size: 1rem;
     display: inline-block;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.7);
@@ -222,7 +261,23 @@ img.store-badge {
     height: 2rem;
 }
 
-span.tick{
+span.tick {
     margin-left: -3rem;
     text-decoration: underline;
+}
+
+.next {
+    margin-left: -3rem;
+    color: @headerFooterBackground;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+
+    &:before {
+        content: "»»» NEXT: ";
+    }
+
+    &:after {
+        content: " «««";
+    }
 }

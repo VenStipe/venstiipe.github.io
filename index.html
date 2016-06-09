@@ -6,25 +6,25 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.min.css" />
 </head>
 <body>
-    <section class="page-header">
+    <header>
         <h1 class="project-name">VenStipe</h1>
         <h2 class="project-tagline">Story of ...</h2>
         <a href="https://github.com/VenStipe" class="btn" target="_blank">View on GitHub</a>
-    </section>
+    </header>
 
     <section class="main-content">
-        <article title="Introduction">
+
+        <div id="introduction">
             <h1>Introduction</h1>
             <p>
                 This website tells the story of how I came to implement <em>VenStipe</em>. I'll explain what it is, or at least, supposed to be, in due time because, when this story started, I was nowhere near think of it. I hope this project sees it's implementation finished, one day. Finished or not, I will tell its whole story here. From a certain point on, that I'll mention, as it happens.
             </p>
-        </article>
+        </div>
 
-        <article title="The Sparkles">
+        <div id="theSparkles">
             <h1>The Sparkles</h1>
 
             <p>I won't go into the the discussion of what is original or if original actually exists but I'll list the sequence of events, feelings and ideas that led to me wanting to implement <em>VenStipe</em>.</p>
-
 
             <h3>The connected dots</h3>
 
@@ -36,9 +36,21 @@
                         I like time waster casual games, mostly those that require brain usage providing, what I call, an active rest. Games like:
                     </p>
                     <ul>
-                        <li><em>2048</em> <a href="https://itunes.apple.com/us/app/2048-game/id871033113" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.androbaby.game2048" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-US/store/apps/2048-Plus/9WZDNCRFHW56" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
-                        <li><em>Flow</em> <a href="https://itunes.apple.com/en/app/flow-free/id526641427" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flow" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free/9wzdncrfj3hr" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
-                        <li><em>Flow: Bridges</em> <a href="https://itunes.apple.com/us/app/flow-free-bridges/id569322760" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flowbridges" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free-bridges/9wzdncrfj3hp" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
+                        <li>
+                            <p>
+                                <em>2048</em>
+                            </p><a href="https://itunes.apple.com/us/app/2048-game/id871033113" target="_blank"><img src="images/stores/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.androbaby.game2048" target="_blank"><img src="images/stores/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-US/store/apps/2048-Plus/9WZDNCRFHW56" target="_blank"><img src="images/stores/wndows-store.png" class="store-badge" /></a>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Flow</em>
+                            </p><a href="https://itunes.apple.com/en/app/flow-free/id526641427" target="_blank"><img src="images/stores/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flow" target="_blank"><img src="images/stores/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free/9wzdncrfj3hr" target="_blank"><img src="images/stores/wndows-store.png" class="store-badge" /></a>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Flow: Bridges</em>
+                            </p><a href="https://itunes.apple.com/us/app/flow-free-bridges/id569322760" target="_blank"><img src="images/stores/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flowbridges" target="_blank"><img src="images/stores/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free-bridges/9wzdncrfj3hp" target="_blank"><img src="images/stores/wndows-store.png" class="store-badge" /></a>
+                        </li>
                     </ul>
                     <p>Anyone can find me playing those on my work breaks, on the bus or while walking on the street by myself.</p>
                 </li>
@@ -84,9 +96,9 @@
             <p>
                 It was clear that I <strong>had to</strong> implement such a service that all game developers could (easily) use to provide such funcionalilty as game state (e.g., high scores and  progress) storing to share cross-instances of the game.
             </p>
-        </article>
+        </div>
 
-        <article title="The Start">
+        <div id="theStart">
             <h1>The Start</h1>
 
             <h3>Brainstorming</h3>
@@ -135,9 +147,9 @@
             <p>
                 <em>VenStipe</em> comes from the latin words <em>venatus</em>, that means <em>game</em> (or <em>hunt</em>) and <em>Stipes</em>, that means <em>club</em>. Later, I realized <em>Stipes</em> means <em>club</em> as batting club or bat and not club as an association. But, when that happen, the choice was already made and the domain was already registered. The name is short easy to pronounce and to remember.
             </p>
-        </article>
+        </div>
 
-        <article title="PoCing">
+        <div id="poCing">
             <h1>PoCing</h1>
             <span class="tick">2016 first half of May</span>
             <p>
@@ -191,9 +203,9 @@
                 </li>
             </ul>
 
-        </article>
+        </div>
 
-        <article title="The real thing">
+        <div id="theRealThing">
             <h1>The real thing</h1>
             <span class="tick">2016 Early June</span>
             <p>
@@ -225,9 +237,22 @@
                     </p>
                 </li>
             </ol>
+        </div>
 
-            <span class="tick"><strong>From this point on, the story is written in "real time"</strong></span>
-        </article>
+        <span class="tick"><strong>From this point on, the story is written in "real time"</strong></span>
+        <br />
+        <br />
+
+        <span class="tick">2016 June 9<sup>th</sup></span>
+
+        <div id="createDocumentationRepository">
+            <h1>Create Documentation Repository</h1>
+            <p>As I said before, one of my many faults is, as developer, getting my hands dirty before defining exactly what and I things are to be done. As I want to do this "the right way", I'll try to document everything before I do it. For that I created a repository just to hold all the documentation about this project. This process is described <a href="docs/github/createRepo.html">here</a>.</p>
+        </div>
+
+        <div class="next">
+            Design and document architecture of the whole solution
+        </div>
     </section>
 </body>
 </html>
