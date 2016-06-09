@@ -1,8 +1,8 @@
-﻿@background: #F6F6FF;
-@foreground: #606c71;
-@headerFooterForeground: #FFFFFF;
-@headerFooterBackground: #000010;
-@headingsForeground: #159957;
+﻿@import "globals.less";
+
+html{
+    font-size: 1em;
+}
 
 body {
     padding: 0;
@@ -10,7 +10,7 @@ body {
     color: @foreground;
     background-color: @background;
     font-family: "Lucida Console";
-    font-size: 16px;
+    font-size: 1em; 
     line-height: 3ex;
 }
 
@@ -49,14 +49,6 @@ header, footer {
     }
 }
 
-.main-content :first-child {
-    margin-top: 0;
-}
-
-.main-content img {
-    max-width: 100%;
-}
-
 .main-content {
     h1, h2, h3, h4, h5, h6 {
         margin-top: 2rem;
@@ -65,8 +57,16 @@ header, footer {
         color: @headingsForeground;
     }
 
+    :first-child {
+        margin-top: 0;
+    }
+
     p {
         margin-bottom: 1em;
+    }
+
+    img {
+        max-width: 100%;
     }
 
     code {
@@ -170,48 +170,6 @@ header, footer {
     }
 }
 
-.main-content pre code:before, .main-content pre code:after, .main-content pre, .main-content pre {
-    content: normal;
-}
-
-.tabledList {
-    width: 450px; /* change it to whatever you like */
-    position: relative;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    &:before, &:after {
-        text-align: center;
-        display: block;
-        border-bottom: 0;
-        width: 48%;
-    }
-
-    &:before {
-        border-right: 0;
-    }
-
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 48%;
-        margin-left: 1px;
-    }
-
-    & li {
-        text-align: right;
-        width: 48%;
-        float: left;
-        margin-bottom: -1px;
-    }
-
-    & li:nth-child(even) {
-        margin-left: -1px;
-    }
-}
-
-
 .btn {
     font-size: 1rem;
     display: inline-block;
@@ -229,8 +187,10 @@ header, footer {
     }
 
     &:hover {
+        color: #FFFFFF;
         color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
+        background-color: #101010;
         background-color: rgba(255, 255, 255, 0.2);
         border-color: rgba(255, 255, 255, 0.3);
     }
