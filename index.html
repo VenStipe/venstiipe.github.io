@@ -1,1 +1,132 @@
-Here will be the story telling.
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>VenStipe - The Story</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.min.css" />
+</head>
+<body>
+    <section class="page-header">
+        <h1 class="project-name">VenStipe</h1>
+        <h2 class="project-tagline">Story of ...</h2>
+        <a href="https://github.com/VenStipe" class="btn" target="_blank">View on GitHub</a>
+    </section>
+
+    <section class="main-content">
+        <h1>Introduction</h1>
+        <p>
+            This website tells the story of how I came to implement <em>VenStipe</em>. I'll explain what it is, or at least, supposed to be, in due time because, when this story started, I was nowhere near think of it. I hope this project sees it's implementation finished, one day. Finished or not, I will tell here its whole story, from a certain point, as it happens.
+        </p>
+
+        <h1>The Sparkles</h1>
+
+        <p>I won't go into the the discussion of what is original or if original actually exists but I'll list the sequence of events, feelings and ideas that led to me wanting to implement <em>VenStipe</em>.</p>
+
+
+        <h3>The connected dots</h3>
+
+        <p>There were three major factors to set me on this path:</p>
+        <ul>
+            <li>
+                <h4>I like time waster games</h4>
+                <p>
+                    I like time wasdter casual games, mostly those that require brain usage providing, what I call, an active rest. Games like:
+                </p>
+                <ul>
+                    <li><em>2048</em> <a href="https://itunes.apple.com/us/app/2048-game/id871033113" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.androbaby.game2048" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-US/store/apps/2048-Plus/9WZDNCRFHW56" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
+                    <li><em>Flow</em> <a href="https://itunes.apple.com/en/app/flow-free/id526641427" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flow" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free/9wzdncrfj3hr" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
+                    <li><em>Flow: Bridges</em> <a href="https://itunes.apple.com/us/app/flow-free-bridges/id569322760" target="_blank"><img src="images/app-store.png" class="store-badge" /></a> <a href="https://play.google.com/store/apps/details?id=com.bigduckgames.flowbridges" target="_blank"><img src="images/google-store.png" class="store-badge" /></a> <a href="https://www.microsoft.com/en-us/store/apps/flow-free-bridges/9wzdncrfj3hp" target="_blank"><img src="images/wndows-store.png" class="store-badge" /></a></li>
+                </ul>
+                <p>Anyone can find me playing those on my work breaks or while walking on the street.</p>
+            </li>
+
+            <li>
+                <h4>I like software development</h4>
+                <p>I make a living as a software developer. I've been doing so since 2008. That story is told <a href="http://bigsby.github.io/" target="_blank">here</a>. For this story, it's important to note that: I'm very fond of generics and sharing funcionality, i.e., implementing things in a one-size-fits-all, non-functionally-repetitive fashion; I try (almost) everything that crosses my path regarding to software development.</p>
+            </li>
+            <li>
+                <h4>I don't like repeating completed things</h4>
+                <p>
+                    Being a technology person, I regularly change device and platform, test new operating systems, and so on. It solemnly annoys me that every time I change something all progress is lost: high scores in <em>2048</em> and levels complete in <em>Flow</em> and <em>Flow: Bridges</em>.
+                </p>
+            </li>
+        </ul>
+
+        <h3>Time wasting and curiousness</h3>
+
+        <p>
+            I was playing <em>2048</em> and strolled to the about section that says: <blockquote>Based on 2048 by Gabriele Cirulli</blockquote> ...and provided a link to the <a href="http://gabrielecirulli.github.io/2048/" target="_blank"><em>GitHub.io</em> page of the original game</a>. My curious self visited that page and that pointed me to the <a href="https://github.com/gabrielecirulli/2048/"><em>GitHub</em> repository where the source code</a> of the game was. It's implemented in <a href="https://www.javascript.com/" target="_blank"><em>JavaScript</em></a> and, so, the game I was playing is, for sure (although I didn't and won't make any effort to confirm), implemented using something like <a href="https://cordova.apache.org/docs/en/latest/guide/platforms/wp8/" target="_blank"><em>Cordova</em></a> that, basically, generates an application that opens a web browser and runs the web page in it.
+        </p>
+
+        <h3>A sequence of events</h3>
+        <p>
+            In late December 2015. I decided to port <em>2048</em> to <a href="https://msdn.microsoft.com/en-us/library/a72418yk.aspx" target="_blank"><em>C#</em></a>. Along the way, I decided to put some use to my <a href="https://github.com/bigsby" target="_blank"><em>GitHub</em> account</a> and start sharing something on it. So I created a my <a href="https://github.com/bigsby/2048.net" target="_blank">2048.net <em>GitHub</em> repository</a> and <a href="https://github.com/Bigsby/2048.net/tree/0c7c06c2ac241bfa9de27498001a8623ea30dc66" target="_blank">ported the <em>JavaScript</em> code to <em>C#</em></a>. I let it snooze for a while. I created a <a href="https://msdn.microsoft.com/en-us/library/ms754130(v=vs.110).aspx" target="_blank"><em>WPF</em></a> project to use it but that wasn't a very sharable platform.
+        </p>
+
+        <p>
+            I had used, professionally, <a href="https://www.xamarin.com/forms" target="_blank"><em>Xamarin Forms</em></a> but it's first version was, as first versions usually are, quite limited in funcionality but one could see that its creation was a big step in the right direction. When version 2 came out I had to give it a go but it's always hard to come up with ideas, at least, good ones, to test a technology. So, I had my <em>C#</em> port of <em>2048</em> parked and I wanted to tryout <em>Xamarin Forms</em>. The result was an implementation of the game in <em>Xamarin Forms</em> that I made sure worked on <em>iOS</em>, <em>Android</em>, <em>Windows 10</em> desktop, Mobile 10 IoT on a <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="_blank"><em>Raspberry Pi 3</em></a>.
+        </p>
+
+        <p>
+            I implemented the gameplay and, then, storing game state and high scores locally, as the <em>JavaScript</em> version does, and after that, I <strong>had to</strong> implement a service to store those remotely so that high scores, first, and game state, after, would be shared cross instance of the game. I.e, when stop playing in my <em>iPad</em> and, then, start playing in my <em>Raspberry Pi</em> I'm exactly in the same point in the game.
+        </p>
+
+        <h3>The idea</h3>
+
+        <p>
+            As I said before, I'm very fond of implementing things in a sharable way so, in this case, I would create a service that all games implemented by me could/would use. But, if I was to implement a service for my games to use, <strong style="text-decoration: underline">why not implement a service that all games could use?</strong>
+        </p>
+
+        <p>
+            It was clear that I <strong>had to</strong> implement a service that all game developers could (easily) use to provide such funcionalilty as game state, such as high scores and  progress, storing to share cross-instances of the game.
+        </p>
+
+        <h1>The Start</h1>
+
+        <h3>Brainstorming</h3>
+        <p>
+            The idea was born: a service that provides storing of game states for all game developers. I, immediately, discussed the idea with two very cloose friend developers. I can track the first Skype chat about <em>VenStipe</em> to the 29<sup>th</sup> March 2016. The more I discussed the purpose and of the project and the tons of things that could (will) be implemented around it, the more I was convinced I had to do it.
+        </p>
+
+        <p>
+            I did some research on existing services and found that there isn't <strong>one</strong> that is platform agnostic and, in more conversations, more ideas on what to do around the service came about, like:
+        </p>
+        <ul>
+            <li>List high scores for a specific game particularly</li>
+            <li>Notifications of high scores beaten</li>
+            <li>Host tips, tricks and solutions</li>
+            <li>...and many more...</li>
+        </ul>
+
+        <h3>Overview</h3>
+        <span class="tick">2016 May, the 4th</span>
+        <p>
+            As a developer, I tend to make the mistake of putting my hands to the task before putting everything into documentation and, thus, settle how and what things should be. I created a <a href="https://github.com/Bigsby/VenStipe" target="_blank"><em>VenStipe</em> repostory</a> in my own <em>GitHub</em> account and created a <a href="https://www.visualstudio.com/" target="_blank"><em>Visual Studio</em></a> solution with the projects, at the time, I thought neeed for the whole thing:
+        </p>
+        <ol>
+            <li>An objects definition library</li>
+            <li>A Web API project that would talk to a database in the backend</li>
+            <li>A Web Site with two faces: for game developers; for gamers</li>
+            <li>A PCL client of the Web API for game developers to use</li>
+        </ol>
+
+        <p>
+            This was a very productive day. In the same day, I had a discussion with my two fellow friend developers on how to call the service. There was to ideas that I wanted reflected in the name, somehow, the idea of game and gathering. I had, from start, the idea of using latin as the base for the name although I looked at the word <em>game</em> in other languages (actually, all <a href="https://translate.google.com/" target="_blank">Google Translate</a> supports). Here is a list of some possible names that came by:
+        </p>
+        <ul>
+            <li>oneludos</li>
+            <li>omniludos</li>
+            <li>allludos</li>
+            <li>alludos</li>
+            <li>gamestipe</li>
+            <li>ludoszone</li>
+            <li>ludozone</li>
+        </ul>
+
+        <p>
+            <em>VenStipe</em> comes from the latin words <em>venatus</em>, that means <em>game</em> (or <em>hunt</em>) and <em>Stipes</em> that means <em>club</em>. Later, I realized <em>Stipes</em> means <em>club</em> as batting club or bat. But, when that happen, the choice was already made and the domain was already registered.
+        </p>
+
+    </section>
+</body>
+</html>
