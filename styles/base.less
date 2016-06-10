@@ -1,0 +1,239 @@
+﻿@background: #F6F6FF;
+@foreground: #606c71;
+@headerFooterForeground: #FFFFFF;
+@headerFooterBackground: #000010;
+@headingsForeground: #159957;
+@minimumWidth: 42em;
+@mediumWidth: 64em;
+
+html {
+    font-size: 1em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: @foreground;
+    background-color: @background;
+    font-family: "Lucida Console";
+    line-height: 3ex;
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    color: @headerFooterForeground;
+    text-align: center;
+    background-color: @headerFooterBackground;
+
+    @media screen and (min-width: @mediumWidth) {
+        padding: 5em 6em;
+    }
+
+    @media screen and (min-width: @minimumWidth) and (max-width: @mediumWidth) {
+        padding: 3em 4em;
+    }
+
+    @media screen and (max-width: @minimumWidth) {
+        padding: 2em 1em;
+    }
+
+    .project-name {
+        margin-top: 0;
+        margin-bottom: 0.1em;
+
+        @media screen and (min-width: @mediumWidth) {
+            font-size: 3.25em;
+        }
+
+        @media screen and (min-width: @minimumWidth) and (max-width: @mediumWidth) {
+            font-size: 2.25em;
+        }
+
+        @media screen and (max-width: @minimumWidth) {
+            font-size: 1.75em;
+        }
+    }
+
+    .btn {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 1em;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        -moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        border-radius: 0.5em 0.5em;
+
+        & + & {
+            margin-left: 1em;
+        }
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            background-color: #101010;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        @media screen and (min-width: @mediumWidth) {
+            padding: 0.75em 1em;
+        }
+
+        @media screen and (min-width: @minimumWidth) and (max-width: @mediumWidth) {
+            padding: 0.6em 0.9em;
+            font-size: 0.9em;
+        }
+
+        @media screen and (max-width: @minimumWidth) {
+            display: block;
+            width: 100%;
+            padding: 0.75em;
+            font-size: 0.9em;
+
+            & + & {
+                margin-top: 1em;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.main-content {
+    div :last-child {
+        margin-bottom: 3em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        font-weight: normal;
+        color: @headingsForeground;
+    }
+
+    :first-child {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    code {
+        padding: 2px 4px;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 0.9em;
+        color: #383e41;
+        background-color: #f3f6fa;
+        border-radius: 0.3em;
+    }
+
+    pre {
+        padding: 0.8em;
+        margin-top: 0;
+        margin-bottom: 1em;
+        font: 1em Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        color: #567482;
+        -ms-word-wrap: normal;
+        word-wrap: normal;
+        background-color: #f3f6fa;
+        border: solid 1px #dce6f0;
+        border-radius: 0.3em;
+        overflow: auto;
+        font-size: 0.9em;
+        line-height: 1.45;
+
+        & > code {
+            padding: 0;
+            margin: 0;
+            font-size: 0.9em;
+            color: #567482;
+            -ms-word-break: normal;
+            word-break: normal;
+            white-space: pre;
+            background: transparent;
+            border: 0;
+        }
+    }
+
+    hr {
+        height: 2px;
+        padding: 0;
+        margin: 1em 0;
+        background-color: @headerFooterBackground;
+        border: 0;
+    }
+
+    ul, ol {
+        margin-top: 0;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        -ms-word-break: normal;
+        word-break: normal;
+        word-break: keep-all;
+
+        th {
+            font-weight: bold;
+        }
+
+        th, td {
+            padding: 0.5em 1em;
+            border: 1px solid #e9ebec;
+        }
+    }
+
+    dl {
+        padding: 0;
+
+        & dt {
+            padding: 0;
+            margin-top: 1em;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        & dd {
+            padding: 0;
+            margin-bottom: 1em;
+        }
+    }
+
+    @media screen and (min-width: @mediumWidth) {
+        max-width: 64em;
+        padding: 2em 6em;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+
+    @media screen and (min-width: @minimumWidth) and (max-width: @mediumWidth) {
+        padding: 2em 4em;
+        font-size: 1.1em;
+    }
+
+    @media screen and (max-width: @minimumWidth) {
+        padding: 2em 1em;
+        font-size: 1em;
+    }
+}

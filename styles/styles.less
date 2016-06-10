@@ -1,241 +1,27 @@
-﻿@import "globals.less";
-
-html {
-    font-size: 1em;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    color: @foreground;
-    background-color: @background;
-    font-family: "Lucida Console";
-    line-height: 3ex;
-}
-
-header, footer {
-    color: @headerFooterForeground;
-    text-align: center;
-    background-color: @headerFooterBackground;
-
-    @media screen and (min-width: 64em) {
-        padding: 5rem 6rem;
-    }
-
-    @media screen and (min-width: 42em) and (max-width: 64em) {
-        padding: 3rem 4rem;
-    }
-
-    @media screen and (max-width: 42em) {
-        padding: 2rem 1rem;
-    }
-
-    .project-name {
-        margin-top: 0;
-        margin-bottom: 0.1rem;
-
-        @media screen and (min-width: 64em) {
-            font-size: 3.25rem;
-        }
-
-        @media screen and (min-width: 42em) and (max-width: 64em) {
-            font-size: 2.25rem;
-        }
-
-        @media screen and (max-width: 42em) {
-            font-size: 1.75rem;
-        }
-    }
-
-    .btn {
-        font-size: 1rem;
-        display: inline-block;
-        margin-bottom: 1rem;
-        color: rgba(255, 255, 255, 0.7);
-        background-color: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        -moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-        -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-        -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-        border-radius: 0.5rem 0.5rem;
-
-        & + & {
-            margin-left: 1rem;
-        }
-
-        &:hover {
-            color: #FFFFFF;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            background-color: #101010;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        @media screen and (min-width: 64em) {
-            padding: 0.75rem 1rem;
-        }
-
-        @media screen and (min-width: 42em) and (max-width: 64em) {
-            padding: 0.6rem 0.9rem;
-            font-size: 0.9rem;
-        }
-
-        @media screen and (max-width: 42em) {
-            display: block;
-            width: 100%;
-            padding: 0.75rem;
-            font-size: 0.9rem;
-
-            & + & {
-                margin-top: 1rem;
-                margin-left: 0;
-            }
-        }
-    }
-}
-
-.main-content {
-    div :last-child {
-        margin-bottom: 3rem;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        font-weight: normal;
-        color: @headingsForeground;
-    }
-
-    :first-child {
-        margin-top: 0;
-    }
-
-    p {
-        margin-bottom: 1em;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-    code {
-        padding: 2px 4px;
-        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        font-size: 0.9rem;
-        color: #383e41;
-        background-color: #f3f6fa;
-        border-radius: 0.3rem;
-    }
-
-    pre {
-        padding: 0.8rem;
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        color: #567482;
-        -ms-word-wrap: normal;
-        word-wrap: normal;
-        background-color: #f3f6fa;
-        border: solid 1px #dce6f0;
-        border-radius: 0.3rem;
-        overflow: auto;
-        font-size: 0.9rem;
-        line-height: 1.45;
-
-        & > code {
-            padding: 0;
-            margin: 0;
-            font-size: 0.9rem;
-            color: #567482;
-            -ms-word-break: normal;
-            word-break: normal;
-            white-space: pre;
-            background: transparent;
-            border: 0;
-        }
-    }
-
-    hr {
-        height: 2px;
-        padding: 0;
-        margin: 1rem 0;
-        background-color: @headerFooterBackground;
-        border: 0;
-    }
-
-    ul, ol {
-        margin-top: 0;
-    }
-
-    table {
-        display: block;
-        width: 100%;
-        overflow: auto;
-        -ms-word-break: normal;
-        word-break: normal;
-        word-break: keep-all;
-
-        th {
-            font-weight: bold;
-        }
-
-        th, td {
-            padding: 0.5rem 1rem;
-            border: 1px solid #e9ebec;
-        }
-    }
-
-    dl {
-        padding: 0;
-
-        & dt {
-            padding: 0;
-            margin-top: 1rem;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        & dd {
-            padding: 0;
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media screen and (min-width: 64em) {
-        max-width: 64rem;
-        padding: 2rem 6rem;
-        margin: 0 auto;
-        font-size: 1.1rem;
-    }
-
-    @media screen and (min-width: 42em) and (max-width: 64em) {
-        padding: 2rem 4rem;
-        font-size: 1.1rem;
-    }
-
-    @media screen and (max-width: 42em) {
-        padding: 2rem 1rem;
-        font-size: 1rem;
-    }
-}
+﻿@import "base";
 
 .store-badge {
-    height: 2rem;
+    height: 2em;
 }
 
 .tick {
-    margin-left: -3rem;
+    margin-left: -3em;
     text-decoration: underline;
+
+    @media screen and (max-width: @minimumWidth) {
+        margin-left: -1em;
+        &:before{
+            content: "__";
+        }
+    }
 }
 
 .next {
-    margin-left: -3rem;
+    margin-left: -3em;
     color: @headerFooterBackground;
     font-weight: bold;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2em;
+    line-height: 2em;
 
     &:before {
         content: "»»» NEXT: ";
@@ -243,5 +29,9 @@ header, footer {
 
     &:after {
         content: " «««";
+    }
+
+    @media screen and (max-width: @minimumWidth) {
+        margin-left: 0;
     }
 }
