@@ -16,55 +16,66 @@ a {
 a:hover {
   text-decoration: underline;
 }
-header,
 footer {
   color: #FFFFFF;
-  text-align: center;
   background-color: #000010;
+  text-align: left;
 }
 @media screen and (min-width: 64em) {
-  header,
   footer {
     padding: 5em 6em;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  header,
   footer {
     padding: 3em 4em;
   }
 }
 @media screen and (max-width: 42em) {
-  header,
   footer {
     padding: 2em 1em;
   }
 }
-header .project-name,
-footer .project-name {
+header {
+  color: #FFFFFF;
+  background-color: #000010;
+  text-align: center;
+}
+@media screen and (min-width: 64em) {
+  header {
+    padding: 5em 6em;
+  }
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  header {
+    padding: 3em 4em;
+  }
+}
+@media screen and (max-width: 42em) {
+  header {
+    padding: 2em 1em;
+  }
+}
+header .project-name {
   margin-top: 0;
   margin-bottom: 0.1em;
 }
 @media screen and (min-width: 64em) {
-  header .project-name,
-  footer .project-name {
+  header .project-name {
     font-size: 3.25em;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  header .project-name,
-  footer .project-name {
+  header .project-name {
     font-size: 2.25em;
   }
 }
 @media screen and (max-width: 42em) {
-  header .project-name,
-  footer .project-name {
+  header .project-name {
     font-size: 1.75em;
   }
 }
-header .btn,
-footer .btn {
+header .btn {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -80,14 +91,10 @@ footer .btn {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   border-radius: 0.5em 0.5em;
 }
-header .btn + header .btn,
-header .btn + footer .btn,
-footer .btn + header .btn,
-footer .btn + footer .btn {
+header .btn + header .btn {
   margin-left: 1em;
 }
-header .btn:hover,
-footer .btn:hover {
+header .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: #101010;
@@ -95,30 +102,24 @@ footer .btn:hover {
   border-color: rgba(255, 255, 255, 0.3);
 }
 @media screen and (min-width: 64em) {
-  header .btn,
-  footer .btn {
+  header .btn {
     padding: 0.75em 1em;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  header .btn,
-  footer .btn {
+  header .btn {
     padding: 0.6em 0.9em;
     font-size: 0.9em;
   }
 }
 @media screen and (max-width: 42em) {
-  header .btn,
-  footer .btn {
+  header .btn {
     display: block;
     width: 100%;
     padding: 0.75em;
     font-size: 0.9em;
   }
-  header .btn + header .btn,
-  header .btn + footer .btn,
-  footer .btn + header .btn,
-  footer .btn + footer .btn {
+  header .btn + header .btn {
     margin-top: 1em;
     margin-left: 0;
   }
@@ -268,7 +269,7 @@ footer .btn:hover {
 .next:after {
   content: " «««";
 }
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 64em) {
   .next {
     margin-left: 0;
   }

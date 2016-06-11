@@ -22,15 +22,14 @@ body {
 a {
     color: #1e6bb8;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-header, footer {
+.headerFooter() {
     color: @headerFooterForeground;
-    text-align: center;
     background-color: @headerFooterBackground;
 
     @media screen and (min-width: @mediumWidth) {
@@ -44,6 +43,16 @@ header, footer {
     @media screen and (max-width: @minimumWidth) {
         padding: 2em 1em;
     }
+}
+
+footer {
+    .headerFooter();
+    text-align: left;
+}
+
+header {
+    .headerFooter();
+    text-align: center;
 
     .project-name {
         margin-top: 0;
